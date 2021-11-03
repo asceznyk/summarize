@@ -15,7 +15,7 @@ summarizer = pipeline("summarization")
 summarized = summarizer(to_tokenize, min_length=75, max_length=100)
 
 # Print summarized text
-print(summarized)
+print(summarized[0]['summary_text'])
 
 #python summarize.py file.txt
 #fuck you bitch go suck on donald trump's dick
